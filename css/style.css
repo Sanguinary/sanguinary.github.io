@@ -4,7 +4,7 @@ a:visited,
 a:active {
   text-decoration: none;
   position: relative;
-  color: #f0f0f0;
+  color: #dcdcdc;
 }
 input,
 button {
@@ -21,14 +21,13 @@ button::-moz-focus-inner {
   padding: 0;
 }
 html,
-body,
-#container {
+body {
   height: 100%;
 }
 body {
   background: #191919;
   font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #f0f0f0;
+  color: #dcdcdc;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -o-text-size-adjust: 100%;
@@ -48,7 +47,9 @@ body {
 .text-center {
   text-align: center;
 }
-#container {
+.container {
+  width: 100%;
+  height: auto;
   position: relative;
 }
 .header {
@@ -57,6 +58,10 @@ body {
   background-color: #2c3e50;
 }
 #main-nav {
+  margin: 0 5%;
+  border-top: 1px solid #78909c;
+  border-bottom: 1px solid #78909c;
+  box-sizing: border-box;
   display: flex;
   -webkit-flex-direction: row;
   -moz-flex-direction: row;
@@ -128,4 +133,21 @@ body {
 .main-nav-link:hover::after {
   opacity: 1;
   transform: translateY(0px);
+}
+#header-image-wrapper {
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+}
+#header-image {
+  background: url("images/logo_white_alt.svg") center;
+  height: 200px;
+  width: 200px;
+  padding: 10px;
 }
