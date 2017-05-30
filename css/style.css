@@ -159,18 +159,19 @@ body::-webkit-scrollbar-thumb {
   opacity: 1;
   transform: translateY(0px);
 }
-@media screen and (min-width: 650px) {
+@media screen and (min-device-width: 650px) {
   .menu-button {
     display: none;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-device-width: 650px) {
   .menu-button {
     cursor: pointer;
   }
   .main-nav-link {
     margin-x: auto;
     margin-y: 5px;
+    font-size: 48px;
     display: block;
     padding: 20px 20px;
   }
@@ -182,17 +183,17 @@ body::-webkit-scrollbar-thumb {
     background: #263238;
     color: #333;
     position: fixed;
-    transform: translateX(-405px);
+    transform: translateX(-105%);
     transition: transform 0.3s cubic-bezier(0, 0, 0.3, 1);
     z-index: 2;
     list-style-type: none;
     padding: 0;
-    max-width: 400px;
+    max-width: 80%;
   }
 }
 svg {
-  height: 45px;
-  width: 65px;
+  height: 90px;
+  width: 130px;
   padding: 5px;
 }
 path {
@@ -201,8 +202,10 @@ path {
 
   #menu-toggle {
       display: none;
+      width: 100px;
+      height: 100px;
   }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-device-width: 650px) {
       #menu-toggle:checked:after {
           opacity: 1;
           pointer-events: auto;
@@ -214,6 +217,7 @@ path {
       }
       #menu-toggle:checked ~ .menu-button{
           position: absolute;
+          outline: none;
           top: 0;
           left: 0;
           width: 100%;
@@ -225,6 +229,7 @@ path {
 
       #menu-toggle:checked ~ .menu-button:after {
           position: absolute
+          outline: none;
           opacity: 0;
           top: 0;
           content: "";
