@@ -7,49 +7,284 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <div class='container'>
-        <div class="header">
-    <div id="header-image-wrapper" class="container">
-        <div id="header-image"></div>
-    </div>
+    <div class="header">
+    <input id="menu-toggle" type="checkbox">
+    <label for="menu-toggle" class="menu-button">
+        <svg class="icon-open" viewBox="0 0 24 24">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+        </svg>
+    </label>
     <nav id="main-nav">
+        <label for="menu-toggle" class="menu-button">
+            <svg class="icon-close" viewBox="0 0 100 100">
+                <path d="M83.288 88.13c-2.114 2.112-5.575 2.112-7.69 0L53.66 66.188c-2.113-2.112-5.572-2.112-7.686 0l-21.72 21.72c-2.114 2.113-5.572 2.113-7.687 0l-4.693-4.692c-2.114-2.114-2.114-5.573 0-7.688l21.72-21.72c2.112-2.115 2.112-5.574 0-7.687L11.87 24.4c-2.114-2.113-2.114-5.57 0-7.686l4.842-4.842c2.113-2.114 5.57-2.114 7.686 0l21.72 21.72c2.114 2.113 5.572 2.113 7.688 0l21.72-21.72c2.115-2.114 5.574-2.114 7.688 0l4.695 4.695c2.112 2.113 2.112 5.57-.002 7.686l-21.72 21.72c-2.112 2.114-2.112 5.573 0 7.686L88.13 75.6c2.112 2.11 2.112 5.572 0 7.687l-4.842 4.84z"/>
+            </svg>
+        </label>
         
-          <a id='route' class="main-nav-link" href="/">Home</a>
+          <a class="route main-nav-link" href="/" aria-labelledby="home">home</a>
         
-          <a id='route' class="main-nav-link" href="/portfolio">Portfolio</a>
+          <a class="route main-nav-link" href="/portfolio" aria-labelledby="portfolio">portfolio</a>
         
-          <a id='route' class="main-nav-link" href="/resume">Resume</a>
+          <a class="route main-nav-link" href="/resume" aria-labelledby="resume">resume</a>
         
-          <a id='route' class="main-nav-link" href="/contact">Contact</a>
+          <a class="route main-nav-link" href="/contact" aria-labelledby="contact">contact</a>
         
-          <a id='selected-route' class="main-nav-link" href="/blog">Blog</a>
+          <a class="selected-route main-nav-link" href="/blog" aria-labelledby="blog">blog</a>
         
     </nav>
 </div>
 
-<div class="body">
-    <div class='row'>
-        <ul>
-        
-            <li>
-                <h3>
-                    <a href="/2017/04/10/first-post/">
-                        first-post
-                    </a>
-                </h3>
-                <div class='text-muted'>
-                    2017-04-10
-                </div>
+<div class="body blog-body">
+    <div class="grid_item"></div>
+    <div class="content grid_item">
+        <div class='row'>
+            <ul>
+            
+                <li>
+                    <h3>
+                        <a href="/blog/2017/04/14/eigth-post/">
+                            eigth-post
+                        </a>
+                    </h3>
+                    <div class='text-muted'>
+                        2017-04-14
+                    </div>
 
-                
-            </li>
-        
-        </ul>
+                    
+                </li>
+            
+                <li>
+                    <h3>
+                        <a href="/blog/2017/04/14/fifth-post/">
+                            fifth-post
+                        </a>
+                    </h3>
+                    <div class='text-muted'>
+                        2017-04-14
+                    </div>
+
+                    
+                </li>
+            
+                <li>
+                    <h3>
+                        <a href="/blog/2017/04/14/eigth-post0/">
+                            eigth-post
+                        </a>
+                    </h3>
+                    <div class='text-muted'>
+                        2017-04-14
+                    </div>
+
+                    
+                </li>
+            
+                <li>
+                    <h3>
+                        <a href="/blog/2017/04/14/fifth-post0/">
+                            fifth-post
+                        </a>
+                    </h3>
+                    <div class='text-muted'>
+                        2017-04-14
+                    </div>
+
+                    
+                </li>
+            
+                <li>
+                    <h3>
+                        <a href="/blog/2017/04/10/first-post/">
+                            first-post
+                        </a>
+                    </h3>
+                    <div class='text-muted'>
+                        2017-04-10
+                    </div>
+
+                    
+                </li>
+            
+                <li>
+                    <h3>
+                        <a href="/blog/2017/04/10/first-post0/">
+                            first-post
+                        </a>
+                    </h3>
+                    <div class='text-muted'>
+                        2017-04-10
+                    </div>
+
+                    
+                </li>
+            
+                <li>
+                    <h3>
+                        <a href="/blog/2017/04/14/fourth-post/">
+                            fourth-post
+                        </a>
+                    </h3>
+                    <div class='text-muted'>
+                        2017-04-14
+                    </div>
+
+                    
+                </li>
+            
+                <li>
+                    <h3>
+                        <a href="/blog/2017/04/14/fourth-post0/">
+                            fourth-post
+                        </a>
+                    </h3>
+                    <div class='text-muted'>
+                        2017-04-14
+                    </div>
+
+                    
+                </li>
+            
+                <li>
+                    <h3>
+                        <a href="/blog/2017/04/14/ninth-post/">
+                            ninth-post
+                        </a>
+                    </h3>
+                    <div class='text-muted'>
+                        2017-04-14
+                    </div>
+
+                    
+                </li>
+            
+                <li>
+                    <h3>
+                        <a href="/blog/2017/04/14/ninth-post0/">
+                            ninth-post
+                        </a>
+                    </h3>
+                    <div class='text-muted'>
+                        2017-04-14
+                    </div>
+
+                    
+                </li>
+            
+                <li>
+                    <h3>
+                        <a href="/blog/2017/04/14/second-post/">
+                            second-post
+                        </a>
+                    </h3>
+                    <div class='text-muted'>
+                        2017-04-14
+                    </div>
+
+                    
+                </li>
+            
+                <li>
+                    <h3>
+                        <a href="/blog/2017/04/14/second-post0/">
+                            second-post
+                        </a>
+                    </h3>
+                    <div class='text-muted'>
+                        2017-04-14
+                    </div>
+
+                    
+                </li>
+            
+                <li>
+                    <h3>
+                        <a href="/blog/2017/04/14/seventh-post0/">
+                            seventh-post
+                        </a>
+                    </h3>
+                    <div class='text-muted'>
+                        2017-04-14
+                    </div>
+
+                    
+                </li>
+            
+                <li>
+                    <h3>
+                        <a href="/blog/2017/04/14/seventh-post/">
+                            seventh-post
+                        </a>
+                    </h3>
+                    <div class='text-muted'>
+                        2017-04-14
+                    </div>
+
+                    
+                </li>
+            
+                <li>
+                    <h3>
+                        <a href="/blog/2017/04/14/sixth-post/">
+                            sixth-post
+                        </a>
+                    </h3>
+                    <div class='text-muted'>
+                        2017-04-14
+                    </div>
+
+                    
+                </li>
+            
+                <li>
+                    <h3>
+                        <a href="/blog/2017/04/14/sixth-post0/">
+                            sixth-post
+                        </a>
+                    </h3>
+                    <div class='text-muted'>
+                        2017-04-14
+                    </div>
+
+                    
+                </li>
+            
+                <li>
+                    <h3>
+                        <a href="/blog/2017/04/14/third-post/">
+                            third-post
+                        </a>
+                    </h3>
+                    <div class='text-muted'>
+                        2017-04-14
+                    </div>
+
+                    
+                </li>
+            
+                <li>
+                    <h3>
+                        <a href="/blog/2017/04/14/third-post0/">
+                            third-post
+                        </a>
+                    </h3>
+                    <div class='text-muted'>
+                        2017-04-14
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
     </div>
+    <div class="table-of-contents grid_item">
+    </div>
+    <div class="grid_item"></div>
 </div>
 <div class="footer">
-</div>
 
-    </div>
+</diV>
+
+
 </body>
 </html>
